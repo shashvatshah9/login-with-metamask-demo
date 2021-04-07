@@ -2,7 +2,7 @@
 
 ## Deploy to Heroku
 
-This Express app is deployed to Heroku via the command `yarn deploy:backend` from the root folder.
+This Express app is deployed to Heroku via the command `npm run deploy:backend` from the root folder.
 
 Some small tweaks are made for this backend to work on Heroku:
 - the `tsconfig.json` could have extended the root one, but doesn't.

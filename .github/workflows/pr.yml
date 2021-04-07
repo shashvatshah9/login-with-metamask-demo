@@ -7,10 +7,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
-            - name: Run yarn lint
+            - name: Run npm lint
               run: |
-                  yarn install
-                  cd packages/backend && yarn install
-                  cd ../frontend && yarn install
+                  npm install
+                  cd packages/backend && npm install
+                  cd ../frontend && npm install
                   cd ../..
-                  yarn lint
+                  npm run lint
